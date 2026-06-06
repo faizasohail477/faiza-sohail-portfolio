@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiza Sohail — Full-Stack Developer & Designer</title>
+  <meta name="description" content="Portfolio of Faiza Sohail — Computer Science student, Full-Stack Web Developer, and Graphic Designer building modern, responsive digital experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-name">FAIZA SOHAIL</span>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress"></div>
+
+  <!-- PARTICLES -->
+  <canvas id="particles"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#designs">Designs</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <video class="hero-video" id="heroVideo" autoplay loop muted playsinline poster="">
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+
+    <button class="mute-btn" id="muteBtn" aria-label="Toggle sound">
+      <i class="fa-solid fa-volume-xmark"></i>
+    </button>
+
+    <div class="hero-content">
+      <p class="hero-kicker" data-aos="fade-up">PORTFOLIO · 2026</p>
+      <h1 class="hero-title">
+        <span class="line">FAIZA</span>
+        <span class="line">SOHAIL</span>
+      </h1>
+      <p class="hero-role" data-aos="fade-up" data-aos-delay="200">Computer Science Student</p>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="300">
+        <span id="typed"></span>
+      </p>
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="400">
+        I build modern, responsive, and user-focused digital experiences through clean code and creative design.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/faiza resume.pdf" download class="btn btn-ghost">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint"><span>SCROLL</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">01 — About</p>
+      <h2 class="section-title" data-aos="fade-up">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-up">
+          <p>I am a motivated Computer Science student with hands-on experience in web development, UI/UX research, and desktop application development.</p>
+          <p>I focus on building full-stack web applications and interactive user interfaces using modern technologies.</p>
+          <p>Alongside development, I have strong experience in communication, teamwork, leadership, and user research through academic and volunteer roles.</p>
+          <p>I aim to contribute to impactful real-world projects and continuously grow as a software professional.</p>
+          <div class="about-meta">
+            <div><span>Location</span><strong>Karachi, Pakistan</strong></div>
+            <div><span>Languages</span><strong>Urdu, English</strong></div>
+            <div><span>Focus</span><strong>Full-Stack & UI/UX</strong></div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="glass stat" data-aos="fade-up"><h3 data-count="1">0</h3><p>Major Projects</p></div>
+          <div class="glass stat" data-aos="fade-up" data-aos-delay="100"><h3 data-count="10">0</h3><p>Tech & Tools</p></div>
+          <div class="glass stat" data-aos="fade-up" data-aos-delay="200"><h3 data-count="1">0</h3><p>Achievements</p></div>
+          <div class="glass stat" data-aos="fade-up" data-aos-delay="300"><h3 data-count="4">0</h3><p>Design Works</p></div>
+          <div class="glass objective" data-aos="fade-up" data-aos-delay="150">
+            <h4>Career Objective</h4>
+            <p>Motivated Computer Science student seeking an internship or entry-level role to leverage full-stack development and graphic design skills in delivering high-quality web applications and creative user experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section alt" id="education">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">02 — Journey</p>
+      <h2 class="section-title" data-aos="fade-up">Education</h2>
+      <div class="timeline">
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-year">2023 – Present</span>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>DHA Suffa University</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-year">Completed</span>
+            <h3>Intermediate (Pre-Engineering)</h3>
+            <p>TCF College, Qayyumabad</p>
+          </div>
+        </div>
+        <div class="tl-item" data-aos="fade-up">
+          <div class="tl-dot"></div>
+          <div class="glass tl-card">
+            <span class="tl-year">Completed</span>
+            <h3>Matriculation (Biology)</h3>
+            <p>TCF School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">03 — Toolbox</p>
+      <h2 class="section-title" data-aos="fade-up">Skills</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">04 — Work</p>
+      <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+
+      <!-- PROJECT 1 -->
+      <article class="glass project" data-aos="fade-up">
+        <div class="project-media">
+          <img src="assets/shuqran-1.png" alt="Shuqran Real Estate portal preview" class="slider-img" id="p1-img" />
+          <!-- <span class="project-badge">Full-Stack</span> -->
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="changeSlide('p1', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-btn" onclick="changeSlide('p1', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <!-- Hidden sources -->
+          <div style="display:none;">
+            <span class="slide-src">assets/shuqran-1.png</span>
+            <span class="slide-src">assets/shuqran-2.png</span>
+            <span class="slide-src">assets/shuqran-3.png</span>
+            <span class="slide-src">assets/shuqran-4.png</span>
+            <span class="slide-src">assets/shuqran-5.png</span>
+            <span class="slide-src">assets/shuqran-6.png</span>
+            <span class="slide-src">assets/shuqran-7.png</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Shuqran Real Estate &amp; Construction Portal</h3>
+          <p>A premium full-stack real estate and construction management platform designed for DHA City and Bahria Town Karachi.</p>
+          <ul class="feature-list">
+            <li>Dynamic property listings</li>
+            <li>Property search &amp; filtering</li>
+            <li>Construction request system</li>
+            <li>Admin dashboard &amp; CRUD operations</li>
+            <li>Upcoming projects management</li>
+          </ul>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/faizasohail477/real-estate-app" class="btn btn-ghost sm"><i class="fa-brands fa-github"></i> GitHub</a>
+            <button class="btn btn-ghost sm case-toggle" data-case="case1"><i class="fa-solid fa-book-open"></i> Case Study</button>
+          </div>
+          <div class="case-study" id="case1">
+            <div><h5>Problem</h5><p>Buyers struggled to browse, filter and request construction services in one trusted place.</p></div>
+            <div><h5>Solution</h5><p>A unified portal with live listings, search, construction requests and an admin dashboard.</p></div>
+            <div><h5>Technologies</h5><p>HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL.</p></div>
+            <div><h5>Challenges</h5><p>Designing scalable CRUD APIs and an intuitive admin workflow.</p></div>
+            <div><h5>Results</h5><p>A responsive, production-style platform demonstrating end-to-end full-stack capability.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="glass project reverse" data-aos="fade-up">
+        <div class="project-media">
+          <img src="assets/vehicle-app1.png" alt="Vehicle Management System preview" class="slider-img" id="p2-img" />
+          <!-- <span class="project-badge">Desktop App</span> -->
+          <div class="slider-nav">
+            <button class="slider-btn" onclick="changeSlide('p2', -1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-btn" onclick="changeSlide('p2', 1)"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+          <!-- Hidden sources -->
+          <div style="display:none;">
+            <span class="slide-src">assets/vehicle-app1.png</span>
+            <span class="slide-src">assets/vehicle-app2.png</span>
+            <span class="slide-src">assets/vehicle-app3.png</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Vehicle Management &amp; Registration System</h3>
+          <p>Desktop-based vehicle registration and management software developed using C# and SQL.</p>
+          <ul class="feature-list">
+            <li>Vehicle registration</li>
+            <li>Record management</li>
+            <li>Search functionality</li>
+            <li>Update &amp; delete operations</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>.NET WinForms</span><span>SQL</span></div>
+          <div class="project-actions">
+             <button class="btn btn-ghost sm case-toggle" data-case="case2"><i class="fa-solid fa-book-open"></i> Case Study</button>
+          </div>
+          <div class="case-study" id="case2">
+            <div><h5>Problem</h5><p>Manual vehicle records were error-prone and hard to search.</p></div>
+            <div><h5>Solution</h5><p>A WinForms desktop app with full CRUD and instant search over an SQL database.</p></div>
+            <div><h5>Technologies</h5><p>C#, .NET WinForms, SQL.</p></div>
+            <div><h5>Challenges</h5><p>Reliable data binding and validation across owner and vehicle records.</p></div>
+            <div><h5>Results</h5><p>A clean, functional management system with add, update, delete and search.</p></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- DESIGNS -->
+  <section class="section" id="designs">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">05 — Creative</p>
+      <h2 class="section-title" data-aos="fade-up">Graphic Design Portfolio</h2>
+      <div class="masonry" id="masonry">
+        <figure data-aos="zoom-in"><img src="assets/fast food ad (1).png" alt="fast food ad design" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="100"><img src="assets/poster.png" alt="Winter sale poster design"  loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="200"><img src="assets/food post.png" alt="Restaurant special menu design" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="300"><img src="assets/URBAN FASHION (1).png" alt="Urban fashion campaign design" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION -->
+<section class="section alt" id="certificates">
+  <div class="container">
+    <p class="eyebrow" data-aos="fade-up">06 — Credentials</p>
+    <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+    <div class="cert-grid">
+      
+      <!-- UPDATED CERTIFICATE CARD -->
+      <div class="glass cert" data-aos="fade-up">
+        <div class="cert-img">
+          <img src="assets/certificate.png" alt="Certificate Preview">
+        </div>
+        <div class="cert-body">
+          <h3>Lloyds Banking Group — UX Design Job Simulation</h3>
+          <p>UX Design Introduction · Forage</p>
+          
+          <!-- NEW ACHIEVEMENTS SECTION -->
+          <div class="cert-achievements">
+            <h4>Key Achievements</h4>
+            <ul>
+              <li>Conducted competitor research and UX analysis.</li>
+              <li>Designed and evaluated customer surveys.</li>
+              <li>Performed user behavior and ethnographic research.</li>
+              <li>Identified opportunities for improving user experience and navigation.</li>
+              <li>Presented findings using data visualization techniques.</li>
+            </ul>
+          </div>
+
+          <div class="tags">
+            <span>Competitor Research</span>
+            <span>Customer Survey Analysis</span>
+            <span>UX Research</span>
+            <span>Data Visualization</span>
+          </div>
+        </div>
+      </div>
+      <!-- END CERTIFICATE CARD -->
+
+    </div>
+  </div>
+</section>
+
+  <!-- RESUME -->
+  <section class="section alt" id="resume">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">08 — Document</p>
+      <h2 class="section-title" data-aos="fade-up">Resume</h2>
+      <div class="resume-wrap" data-aos="fade-up">
+        <div class="glass resume-preview">
+          <iframe src="assets/faiza resume.pdf#toolbar=0" title="Faiza Sohail Resume"></iframe>
+        </div>
+        <a href="assets/faiza resume.pdf" download class="btn btn-primary"><i class="fa-solid fa-download"></i> Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">09 — Say Hello</p>
+      <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-up">
+          <a class="glass info-row" href="tel:+923181246079"><i class="fa-solid fa-phone"></i><div><span>Phone: </span><strong> +92 318 1246079</strong></div></a>
+          <a class="glass info-row" href="mailto:faizaasohail477@gmail.com"><i class="fa-solid fa-envelope"></i><div><span>Email: </span><strong> faizasohail477@gmail.com</strong></div></a>
+          <div class="glass info-row"><i class="fa-solid fa-location-dot"></i><div><span>Location: </span><strong> Karachi, Pakistan</strong></div></div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/faizasohail" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/faizasohail477" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:faizaasohail477@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="glass contact-form" id="contactForm" data-aos="fade-up" data-aos-delay="100">
+          <div class="field"><input type="text" name="name" required /><label>Your Name</label></div>
+          <div class="field"><input type="email" name="email" required /><label>Your Email</label></div>
+          <div class="field"><input type="text" name="subject" required /><label>Subject</label></div>
+          <div class="field"><textarea name="message" rows="4" required></textarea><label>Message</label></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed &amp; Developed by <strong>Faiza Sohail</strong></p>
+    <p class="muted">© 2026 All Rights Reserved</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="lb-close" id="lbClose">&times;</span>
+    <img src="" alt="Preview" id="lbImage" />
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
