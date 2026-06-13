@@ -51,7 +51,12 @@ muteBtn.addEventListener("click", () => {
 });
 
 /* ===== TYPING ANIMATION ===== */
-const phrases = ["Full-Stack Web Developer", "Graphic Designer", "UI/UX Enthusiast"];
+const phrases = [
+  "Software Developer",
+  "Full-Stack Web Developer",
+  "C# & .NET Developer",
+  "Graphic Designer"
+];
 const typed = document.getElementById("typed");
 let pi = 0, ci = 0, deleting = false;
 (function type(){
@@ -71,13 +76,49 @@ gsap.from(".hero-title .line", { yPercent: 110, duration: 1, ease: "power4.out",
 
 /* ===== SKILLS ===== */
 const skills = [
-  { t:"Frontend", i:"fa-code", items:["HTML","CSS","JavaScript"] },
-  { t:"Backend", i:"fa-server", items:["Node.js","Express.js"] },
-  { t:"Database", i:"fa-database", items:["PostgreSQL","MySQL","SQL"] },
-  { t:"Programming", i:"fa-laptop-code", items:["C#","OOP"] },
-  { t:"Design", i:"fa-pen-nib", items:["Canva","UI/UX Fundamentals"] },
-  { t:"Soft Skills", i:"fa-users", items:["Communication","Leadership","Teamwork","Problem Solving","Adaptability"] },
+  {
+    t:"Frontend",
+    i:"fa-code",
+    items:["HTML","CSS","JavaScript","Responsive Design"]
+  },
+
+  {
+    t:"Backend",
+    i:"fa-server",
+    items:["Node.js","Express.js"]
+  },
+
+  {
+    t:"Database",
+    i:"fa-database",
+    items:["PostgreSQL","MySQL","SQL"]
+  },
+
+  {
+    t:"Desktop Development",
+    i:"fa-desktop",
+    items:["C#",".NET WinForms","CRUD Operations","DataGridView","File Handling"]
+  },
+
+  {
+    t:"Tools",
+    i:"fa-screwdriver-wrench",
+    items:["Git","GitHub","VS Code","Visual Studio"]
+  },
+
+  {
+    t:"Design",
+    i:"fa-pen-nib",
+    items:["Canva","UI/UX Research","Graphic Design"]
+  },
+
+  {
+    t:"Soft Skills",
+    i:"fa-users",
+    items:["Communication","Leadership","Teamwork","Problem Solving"]
+  }
 ];
+
 document.getElementById("skillsGrid").innerHTML = skills.map((s,n)=>`
   <div class="glass skill-cat" data-aos="fade-up" data-aos-delay="${n*60}">
     <h3><i class="fa-solid ${s.i}"></i>${s.t}</h3>
@@ -187,7 +228,7 @@ if(form) {
     const data = new FormData(form);
     const subject = encodeURIComponent(data.get("subject") || "Portfolio Contact");
     const body = encodeURIComponent(`Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`);
-    window.location.href = `mailto:faizaasohail477@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:faizasohail477@gmail.com?subject=${subject}&body=${body}`;
     note.textContent = "Opening your email app… thank you!";
     form.reset();
   });
